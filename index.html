@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <main class="flex">
+        <div class="left flex">
+            <div class="flex">
+                <img src="/images/odin-lined.png" alt="BannerLogo">
+                <h1>Sign-Up Form</h1>
+            </div>
+        </div>
+        <div class="right flex">
+            <div class="hero-banner">
+                <div>
+                    <P class="quote">FORMAL EDUCATION WILL MAKE YOU A LIVING;SELF-EDUCATION WILL MAKE YOU A FORTUNE.</P>
+                    <p class="quote-author">-Jim Rohn</p>
+                </div>
+            </div>
+            <div class="form flex">
+                <p>Let's do this!</p>
+                <form action="http://httpbin.org/post" method="post" id="myform">
+                    <div class="input-set flex">
+                        <label for="firstname">First Name</label>
+                        <input type="text" id="firstname" name="firstname" minlength="3" maxlength="50" required>
+                    </div>
+                    <div class="input-set flex">
+                        <label for="lastname">Last Name</label>
+                        <input type="text" id="lastname" name="lastname" minlength="3" maxlength="50" required>
+                    </div>
+                    <div class="input-set flex">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="input-set flex">
+                        <label for="phone_number">Phone Number</label>
+                        <input type="tel" id="phone_number" name="phone_number" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
+                    </div>
+                    <div class="input-set flex">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <div class="input-set flex">
+                        <label for="confirm_password">Confirm Password</label>
+                        <input type="password" id="confirm_password" name="confirm_password" required>
+                    </div>
+                </form>
+            </div>
+            <div class="submit-form">
+                <button id="btn" type="submit" form="myform" value="Update">Create Account</button>
+                <p>Already have an account? <a href="http://" target="_blank" rel="noopener noreferrer">Log In!</a></p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
