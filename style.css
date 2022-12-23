@@ -33,7 +33,7 @@ main {
     min-width: 345px;
     width: 40vw;
     height: 100vh;
-    background: url(/images/pexels-marlon-martinez-1450082.jpg);
+    background: url(./images/pexels-marlon-martinez-1450082.jpg);
     background-size: cover; 
     color: white;
     display: flex;
